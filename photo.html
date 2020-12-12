@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Photos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body class= "w3-black w3-content" style="max-width:1500px">
+<div class="w3-bar sticky-top w3-black w3-hide-small">
+  <a href="rahulmali.html"class="w3-bar-item w3-button"><img src="b.jpg" height="40px" width="250"></a>
+  <a href="https://www.google.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+  <a href="https://www.linkedin.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.twitter.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.flickr.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-flickr"></i></a>
+  <a href="https://www.snapchat.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-snapchat"></i></a>
+  <a href="https://www.instagram.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.facebook.com/" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook-official"></i></a>
+</div>
+<!-- Sidebar -->
+<nav class="w3-sidebar sticky-top w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="rahulmali.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="photo.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom w3-text-white">
+  <h1><b>BOLLYWOOD GALLERY</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="p1.jpg" style="width:100%">
+    <img src="p2.jpg" style="width:100%">
+    <img src="p3.jpg" style="width:100%">
+    <img src="p4.jpg" style="width:100%">
+    <img src="p5.jpg" style="width:100%">
+    <img src="p6.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="p7.jpg" style="width:100%">
+    <img src="p8.jpg" style="width:100%">
+    <img src="p9.jpg" style="width:100%">
+    <img src="p10.jpg" style="width:100%">
+    <img src="p11.jpg" style="width:100%">
+    <img src="p12.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="p13.jpg" style="width:100%">
+    <img src="p14.jpg" style="width:100%">
+    <img src="p15.jpg" style="width:100%">
+    <img src="p16.jpg" style="width:100%">
+    <img src="p17.jpg" style="width:100%">
+    <img src="p18.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+<hr>
+<!-- Footer -->
+<footer class="w3-lightblack w3-center w3-content  w3-text-grey w3-xlarge">
+        <p><i class="fa fa-fw fa-phone"></i> +91 8827336701</p>
+        <p><i class="fa fa-fw fa-envelope"></i> malirahul6425@gmail.com</p>
+        
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="localhost:1212" target="_blank" class="w3-hover-text-green">rock_n_rahul</a></p>
+  </footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
